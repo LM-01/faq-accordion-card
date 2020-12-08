@@ -1,0 +1,54 @@
+body {
+    margin: 25px; 
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+
+.main-card {
+    max-width: 900px;
+    background-color: white;
+    margin: 5% auto;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    padding: 0px 0px 0px 0px;    
+}
+
+.left-column {
+    background: url(./images/bg-pattern-desktop.svg);
+    width: 400px;
+    overflow: hidden;
+    padding: 150px 0px 0px;
+    background-position: -567px -326px;
+}
+
+.box-desktop {
+    position: absolute;
+    top: 260px;
+    left: 200px;
+    z-index: 1;
+    animation: pulse 5s linear infinite alternate;
+
+}
+
+@keyframes pulse {
+    0% {
+      transform: translateY(-20px);
+    }
+    50% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(-20px);
+    }
+  }
+
+.woman-desktop {
+    position: relative;
+    top: -100px;
+    left: -77px;
+}
+
+.right-column {
+    width: 450px;
+    padding: 25px;
+}
